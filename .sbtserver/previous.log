@@ -1,0 +1,246 @@
+New log file opened at Wed Nov 11 18:26:03 CST 2015 by 26329@robots
+jvm 26329@robots
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/home/esteban/dev/scala/synergy-base
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /home/esteban/dev/scala/synergy-base/project
+[Loading] Found non-root projects 
+[Loading] Done in /home/esteban/dev/scala/synergy-base/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /home/esteban/dev/scala/synergy-base/project, returning: (synergy-base-build)
+Loading project definition from /home/esteban/dev/scala/synergy-base/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3005f1b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /home/esteban/dev/scala/synergy-base
+[Loading] Found non-root projects 
+[Loading] Done in /home/esteban/dev/scala/synergy-base, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.SerializersPlugin,sbt.plugins.SendEventServicePlugin,sbt.plugins.InteractionServicePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /home/esteban/dev/scala/synergy-base, returning: (synergy-base)
+Set current project to synergy-base (in build file:/home/esteban/dev/scala/synergy-base/)
+Reapplying settings...
+Set current project to synergy-base (in build file:/home/esteban/dev/scala/synergy-base/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1450de17, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/esteban/dev/scala/synergy-base/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/esteban/dev/scala/synergy-base/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 20365957, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/usr/lib/jvm/jdk1.8.0_45/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_45/jre/classes:/home/esteban/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar
+	-classpath
+	/home/esteban/dev/scala/synergy-base/target/scala-2.11/classes:/home/esteban/dev/scala/synergy-base/lib/spacebase-erl.jar:/home/esteban/dev/scala/synergy-base/lib/spacebase-thrift.jar:/home/esteban/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/home/esteban/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/esteban/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.4.0.jar
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:24: not found: type SpaceBaseBuilder
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:24: not found: type SpaceBaseBuilder
+Read from stdout: val builder = new SpaceBaseBuilder()
+  val builder = new SpaceBaseBuilder()
+Read from stdout: ^
+                    ^
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: not found: type SpaceBase
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: not found: type SpaceBase
+Read from stdout: val userBase : SpaceBase[User]
+  val userBase : SpaceBase[User]
+Read from stdout: ^
+                 ^
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: only classes can have declared but undefined members
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: only classes can have declared but undefined members
+Read from stdout: val userBase : SpaceBase[User]
+  val userBase : SpaceBase[User]
+Read from stdout: ^
+      ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 5 s, completed Nov 11, 2015 6:26:16 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/esteban/dev/scala/synergy-base/}synergy-base/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@43d91c04, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/esteban/dev/scala/synergy-base/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/esteban/dev/scala/synergy-base/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 28c9ec10, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/usr/lib/jvm/jdk1.8.0_45/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_45/jre/classes:/home/esteban/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar
+	-classpath
+	/home/esteban/dev/scala/synergy-base/target/scala-2.11/classes:/home/esteban/dev/scala/synergy-base/lib/spacebase-erl.jar:/home/esteban/dev/scala/synergy-base/lib/spacebase-thrift.jar:/home/esteban/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/home/esteban/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/esteban/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.4.0.jar
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:24: not found: type SpaceBaseBuilder
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:24: not found: type SpaceBaseBuilder
+Read from stdout: val builder = new SpaceBaseBuilder()
+  val builder = new SpaceBaseBuilder()
+Read from stdout: ^
+                    ^
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: not found: type SpaceBase
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: not found: type SpaceBase
+Read from stdout: val userBase : SpaceBase[User]
+  val userBase : SpaceBase[User]
+Read from stdout: ^
+                 ^
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: only classes can have declared but undefined members
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: only classes can have declared but undefined members
+Read from stdout: val userBase : SpaceBase[User]
+  val userBase : SpaceBase[User]
+Read from stdout: ^
+      ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed Nov 11, 2015 6:26:18 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/esteban/dev/scala/synergy-base/}synergy-base/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@16f05740, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/esteban/dev/scala/synergy-base/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/esteban/dev/scala/synergy-base/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler d826659, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/usr/lib/jvm/jdk1.8.0_45/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_45/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_45/jre/classes:/home/esteban/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar
+	-classpath
+	/home/esteban/dev/scala/synergy-base/target/scala-2.11/classes:/home/esteban/dev/scala/synergy-base/lib/spacebase-erl.jar:/home/esteban/dev/scala/synergy-base/lib/spacebase-thrift.jar:/home/esteban/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/home/esteban/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/esteban/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.4.0.jar
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:24: not found: type SpaceBaseBuilder
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:24: not found: type SpaceBaseBuilder
+Read from stdout: val builder = new SpaceBaseBuilder()
+  val builder = new SpaceBaseBuilder()
+Read from stdout: ^
+                    ^
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: not found: type SpaceBase
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: not found: type SpaceBase
+Read from stdout: val userBase : SpaceBase[User]
+  val userBase : SpaceBase[User]
+Read from stdout: ^
+                 ^
+Read from stdout: /home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: only classes can have declared but undefined members
+/home/esteban/dev/scala/synergy-base/src/main/scala/SynergyBase.scala:26: only classes can have declared but undefined members
+Read from stdout: val userBase : SpaceBase[User]
+  val userBase : SpaceBase[User]
+Read from stdout: ^
+      ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed Nov 11, 2015 6:26:20 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request

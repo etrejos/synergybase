@@ -1,0 +1,40 @@
+New log file opened at Fri Nov 20 20:18:34 CST 2015 by 7382@robots
+Taking next connection to: 44357
+New client attempting to connect on port: 36766-44357
+  Address = /127.0.1.1:44357
+This client on port 36766 has uuid 60b2fdd1-ba5b-4cc7-a73a-cb2e0282fffb configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-60b2fdd1-ba5b-4cc7-a73a-cb2e0282fffb
+Taking next connection to: 44357
+New client attempting to connect on port: 36768-44357
+  Address = /127.0.1.1:44357
+Handshake exception on socket: 36768
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 44357
+New client attempting to connect on port: 36770-44357
+  Address = /127.0.1.1:44357
+This client on port 36770 has uuid 76e6b5b4-f71c-4c69-9136-d678f8baa4fa configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-60b2fdd1-ba5b-4cc7-a73a-cb2e0282fffb, activator-76e6b5b4-f71c-4c69-9136-d678f8baa4fa
+Taking next connection to: 44357
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44357
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44357
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44357
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44357
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44357
