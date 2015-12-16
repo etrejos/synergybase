@@ -91,15 +91,17 @@ class GenericAdmin(stores: Map[Int, ActorRef])
 
   when(Working) {
     case Event(c: CreateGeneric, Factories(map)) =>
-      log.info(s"Request to create ${c.genericType}clazz: ${c.genericId}")
-      if (c.dimension == 2 || c.dimension == 3) {
-        if (!map.contains(c.genericType)) self ! AddFactory(c.genericType)
-        self ! c
-        //SpatialLab.stores(dim) ! CreateAndLocate(s"generic$id", aabb,
-        //  generic)
-        // sender ! generic
-      } else {
-        log.error(s"Dimension: ${c.dimension} is not supported.")
+      log.info(s"Request to create ${c.genericType} clazz: ${c.genericId}")
+      c.dimension match {
+        case 2 | 3 => {
+          if (!map.contains(c.genericType)) {
+            self ! AddFactory(c.genericType)
+            self ! c
+          } else {
+            map(c.genericType)
+          }
+        }
+        case x => log.error(s"Dimension: $x is not supported.")
       }
       stay
 
